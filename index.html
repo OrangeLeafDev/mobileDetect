@@ -2,18 +2,19 @@
 <html>
 <head>
     <script>
-	var deviceCheck = document.createElement("...");
-    	var mobileText = document.createTextNode("Mobile not supported, Please come with a PC.");
+	let greeting;
 	if(typeof window.orientation !== 'undefined'){
-		deviceCheck.appendChild(mobileText);
+		messageText = "Please use a PC."
 	}
 	else{
-	
+		messageText = "..."
 	}
+	document.getElementById("message").innerHTML = messageText;
     </script>
     <style>
         ...</style>
 </head>
 <body>
+	<p id="message">
 </body>
 </html>` 
