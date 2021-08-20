@@ -2,14 +2,18 @@
 <html>
 <head>
     <script>
-    if(typeof window.orientation !== 'undefined'){
-		window.location.href = "http://example.com";
+	var deviceCheck = document.createElement("...");
+    	var mobileText = document.createTextNode("Mobile not supported, Please come with a PC.");
+	if(typeof window.orientation !== 'undefined'){
+		deviceCheck.appendChild(mobileText);
+	}
+	else{
+	
 	}
     </script>
     <style>
         ...</style>
 </head>
 <body>
-    hi
 </body>
 </html>` 
