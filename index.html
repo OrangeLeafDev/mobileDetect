@@ -20,6 +20,21 @@
 		document.body.appendChild(a);
 	}
 	document.getElementById("messageElement").innerHTML = messageText;
+	// random crap
+	links = new Array();
+	links[1]="<span class='asep' style='border-top: 0px; margin-top: 0px;'>Welcome</span>";
+	links[2]="<a href='#'>Home</a>";
+	links[3]="<span class='asep'>Body Jewelry</span>";
+	links[4]="<a href='#'>Circular Barbells</a>";
+	links[5]="<a href='#'>Belly Button</a>";
+	links[6]="<a href='#'>Curved Barbells</a>";
+	links[7]="<span class='asep'>User Controls</span>";
+	links[8]="<a href='#' onclick='window.print(); return false'>Print This Page</a>";
+
+
+	function writeLinks() {
+	 document.getElementById('nav1').innerHTML = links[1] + links[2] + links[3] + links[4] + links[5] + links[6] + links[7] + links[8];
+	 document.getElementById('featured').innerHTML = ' <b>Featured Product</b><br><a href="#"><img src="icon1.gif" border="0"><br>Product Title</a>';
     </script>
     <style>
     </style>
