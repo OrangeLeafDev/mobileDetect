@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
-<head>
-	<p id="messageElement">Something went wrong</p>
-    <script>
+<style>
+	background-color: #ffff00;
+</style>
+<script>
 	// setting variables
 	var a = document.createElement('a');
 	var linkText = document.createTextNode("my title text");
@@ -31,10 +31,10 @@
 	links[7]="<span class='asep'>User Controls</span>";
 	links[8]="<a href='#' onclick='window.print(); return false'>Print This Page</a>";
 	document.getElementById('p').innerHTML = links.join("");
-    </script>
-    <style>
-	background-color: #ffff00;
-    </style>
+</script>
+<html>
+<head>
+	<p id="messageElement">Something went wrong</p>
 </head>
 <body>
 </body>
