@@ -3,16 +3,21 @@
 <head>
 	<p id="messageElement">hii</p>
     <script>
-	var myloc = window.location.href;
-	var locarray = myloc.split("/");
-	delete locarray[(locarray.length-1)];
-	var arraytext = locarray.join("/");
+	// setting variables
+	var a = document.createElement('a');
+	var linkText = document.createTextNode("my title text");
 	let messageText;
+	// script
+	a.appendChild(linkText);
+	a.title = "my title text";
+	a.href = "http://example.com";
+	// mobile detect
 	if(typeof window.orientation !== 'undefined'){
 		messageText = "Please use a PC."
 	}
 	else{
 		messageText = "..."
+		document.body.appendChild(a);
 	}
 	document.getElementById("messageElement").innerHTML = messageText;
     </script>
